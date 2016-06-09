@@ -11,7 +11,7 @@ So the modulation happens in the app.
 The MainActivity points us to a make-threads which loads a whole lot of threads which all look very similar. 
 They all change the volume of the AudioChannel 3 and wait for a certain amount of time.
 
-```
+```java
 package org.teamsik.apps.hackingchallenge.sound.threads;
 
 import android.app.Activity;
@@ -44,13 +44,13 @@ public class X00a6915f2bd395a55fb85aed647039e4136e35cb extends Thread {
 
 So i wrote a simple app which checks the volume of the audiostream 3 and every time it changes it prints in the log.
 
-```
+```java
 import android.util.Log;
 import android.media.AudioManager;
 
 public class MainActivity extends AppCompatActivity {
 
-    \@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
